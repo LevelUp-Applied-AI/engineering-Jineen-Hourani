@@ -1,11 +1,11 @@
 # PR Self-Review Checklist
 
-Before opening a pull request, I review the following:
+Before opening a pull request, I verify the following:
 
-- [ ] My branch is up to date with main
-- [ ] I tested the changes locally
-- [ ] I did not commit unnecessary files (e.g., .venv, __pycache__)
-- [ ] The code is readable and follows project structure
-- [ ] I updated documentation if needed
-- [ ] I wrote clear commit messages
-- [ ] The PR description explains What, Why, and How
+- [ ] The code does what the PR title and description claim (correctness)
+- [ ] All tests pass locally and no existing functionality is broken
+- [ ] There are tests covering the new or modified behavior (if applicable)
+- [ ] The scope of this PR is focused on one logical change
+- [ ] There are no debug artifacts (e.g., print statements, breakpoint(), temp files)
+- [ ] The README or documentation is updated if behavior changed
+- [ ] Commit messages are clear and meaningful
